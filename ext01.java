@@ -4,8 +4,6 @@ package homework;
 
 import java.util.Scanner; //Получение данных из терминала
 
-import javax.swing.plaf.basic.BasicSliderUI.TrackListener;
-
 public class ext01 {
     public static void main(String[] args) {
         Scanner iScanner = new Scanner(System.in);
@@ -21,7 +19,4 @@ public class ext01 {
         }
         return Triangle(num - 1) + num;
     }
-    
-
-
 }

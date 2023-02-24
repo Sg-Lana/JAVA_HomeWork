@@ -17,6 +17,34 @@ public class ext02 {
        Scanner sc = new Scanner(System.in);
        System.out.println("Введите число а - ");
        int a = sc.nextInt();
-       sc.close();
+       System.out.println("Введите число b - ");
+       int b = sc.nextInt();
+       sc.close();   
+    }
+
+    static double factor(int a, int b) {
+        double result = 1;
+        if (a == 0) return 0;    
+        if ((b % 2 == 0) && (b >= 0)) {
+            for (int i = 0; i < b / 2; i++) {
+                result *= a;
+            }
+            result *= result;
+            return result;
+        } else if ((b % 2 != 0) && (b > 0)) {
+            b = b - 1;
+            for (int i = 0; i < b / 2; i++) {
+                result *= a;
+            }
+            result = (result * result) * a;
+            return result;
+        } else if (b < 0) {
+            for (int i = 0; i > b; i--) {
+                result *= a;
+            }
+            result = 1 / result;
+            return result;
+        }
+        return 0;
     }
 }

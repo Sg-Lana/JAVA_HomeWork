@@ -3,7 +3,7 @@ package homework;
 public class ext05 {
     public static void main(String[] args) {
       var map = getMap();
-      // System.out.println(rawData(getMap()));
+      System.out.println(rawData(getMap()));
       System.out.println(mapColor(getMap()));
     }
   
@@ -47,7 +47,7 @@ public class ext05 {
         for (int col = 0; col < map[row].length; col++) {
           switch (map[row][col]) {
             case 0:
-              sb.append("в–‘");
+              sb.append("--‘");
               break;
             case -1:
               sb.append("в–“");
@@ -71,3 +71,9 @@ public class ext05 {
     }
   }
   
+
+  /*
+   * 1. генератор карты
+   * 2. принтер карты
+   * 3. 
+   */
